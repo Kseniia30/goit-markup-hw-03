@@ -152,6 +152,7 @@ footer {
     letter-spacing: 0.06em;
     padding: 10px 32px;
     border: none;
+    cursor: pointer;
 }
 .first-button:hover {
     background-color: var(--send-two);
@@ -242,6 +243,7 @@ footer {
     padding: 6px 22px;
     border: none;
     margin-right: 8px;
+    cursor: pointer;
 }
 .button-active {
     color: var(--main);
