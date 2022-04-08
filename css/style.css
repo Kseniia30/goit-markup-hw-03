@@ -1,6 +1,7 @@
 :root {
     --main: #fff;
     --sending: #2196F3;
+    --send-two: #188CE8;
     --main-text-color: #212121;
     --black: #000000;
     --second-main: #757575;
@@ -141,7 +142,7 @@ footer {
 .first-button {
     color: var(--main);
     background-color: var(--sending);
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -151,6 +152,9 @@ footer {
     letter-spacing: 0.06em;
     padding: 10px 32px;
     border: none;
+}
+.first-button:hover {
+    background-color: var(--send-two);
 }
 .details-item {
     width: 270px;
@@ -230,6 +234,7 @@ footer {
 }
 .button-active,
 .second-buttons {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
