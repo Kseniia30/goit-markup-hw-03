@@ -31,6 +31,42 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: auto;
     margin-left: auto;
 }
+.our-job-head, 
+.team-head, 
+.first-button {
+    text-align: center;
+}
+.team-list, 
+.our-job-list, 
+.details-list, .header, 
+.header-navigation-list, 
+.header-navigation, 
+.header-contacts-list,
+.portfolio-buttons {
+    display: flex;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.last {
+    margin-right: 0;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+/*--------------------------------------HEADER-------------------------------------------*/
+
 .header {
     height: 80px;
     align-items: center;
@@ -55,23 +91,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header-web {
     color: var(--black);
-}
-.footer-web {
-    color: var(--main);
-}
-.our-job-head, 
-.team-head, 
-.first-button {
-    text-align: center;
-}
-.team-list, 
-.our-job-list, 
-.details-list, .header, 
-.header-navigation-list, 
-.header-navigation, 
-.header-contacts-list,
-.portfolio-buttons {
-    display: flex;
 }
 .header-navigation-list {
     padding: 0;
@@ -110,10 +129,20 @@ h1, h2, h3, h4, h5, h6, p {
 .header-contacts-item:focus {
     color: var(--sending);
 }
+.header-active {
+    color: var(--sending);
+}
+
+
+/*------------------------------------FOOTER-----------------------------------*/
+
 footer {
     background-color: var(--back);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-web {
+    color: var(--main);
 }
 .footer-list {
     padding-left: 0;
@@ -146,13 +175,9 @@ footer {
     margin-bottom: 9px;
     display: block;
 }
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.header-active {
-    color: var(--sending);
-}
+
+/*------------------------------------FIRST MAIN SECTION-----------------------------------*/
+
 .main-section {
     background-color: var(--back);
     padding-top: 200px;
@@ -184,6 +209,10 @@ footer {
 .first-button:hover {
     background-color: var(--send-two);
 }
+
+
+/*------------------------------------DETAILS-----------------------------------*/
+
 .details-list {
 
 }
@@ -205,9 +234,9 @@ footer {
     font-weight: 400;
     line-height: 1.7;
 }
-.last {
-    margin-right: 0;
-}
+
+/*--------------------------------------WORK-------------------------------------------*/
+
 .webpict {
     max-width: 100%;
     display: block;
@@ -230,6 +259,9 @@ footer {
     justify-content: space-between;
     padding: 0;
 }
+
+/*--------------------------------------TEAM-------------------------------------------*/
+
 .team-section {
     background-color: var(--second-back);
     height: 648px;
@@ -264,9 +296,9 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
-.portfolio-header {
-    visibility: hidden;
-}
+
+/*--------------------------------------PORTFOLIO-------------------------------------------*/
+
 .portfolio-buttons {
     justify-content: center;
     margin-bottom: 50px;
